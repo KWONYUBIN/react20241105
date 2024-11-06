@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function MyApp20(props) {
   const obj = {
@@ -8,14 +8,13 @@ function MyApp20(props) {
 
   return (
     <div>
-      <Comp title={obj.title} price={obj.price}}/>
+      <Comp title={obj.title} price={obj.price} />
       <Comp {...obj} />
-      <Comp {...obj} author={"한강"}/>
+      <Comp {...obj} author={"한강"} />
     </div>
   );
 }
-
-function Comp({price, title, author = "무명"}) {
+function Comp({ price, title, author = "무명" }) {
   return (
     <div>
       <h3>comp</h3>
@@ -23,8 +22,7 @@ function Comp({price, title, author = "무명"}) {
       <li>{price}</li>
       <li>{author}</li>
     </div>
-  )
+  );
 }
-
 
 export default MyApp20;
