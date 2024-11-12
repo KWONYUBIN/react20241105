@@ -9,7 +9,7 @@ function MyApp45(props) {
   const handleClick = () => {
     // 리액트는 상태가 변경될 때마다 그리긴 하지만 항상 그러는 건 아님
     // 아래의 경우엔 최종 상태만 변경
-    // react 는 상탸를 비교해서 적절한 순간에 re-render 함
+    // react 는 상태를 비교해서 적절한 순간에 re-render 함
     setNumber(number + 1);
     setNumber(number + 2);
     setNumber(number + 3);
